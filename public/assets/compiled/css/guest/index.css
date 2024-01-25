@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+
+:root {
+    --font-roboto: "Roboto", sans-serif;
+    --font-bad-script: "Bad Script", cursive;
+    --color-red: #ff004d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-roboto);
+}
+
+.navbar-custom {
+    transition: 0.2s ease-in-out;
+}
+
+.navbar .navbar-brand-custom {
+    text-decoration: none;
+    color: var(--color-red);
+    padding: 0.2rem 0.7rem;
+    font-family: var(--font-bad-script);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.navbar .nav-item-custom {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-roboto);
+    font-size: 0.9rem;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar .nav-item-custom:hover {
+    color: var(--color-red);
+}
+
+.navbar .navbar-btn-menu {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.navbar #menu-desktop > li > a {
+    font-size: 0.9rem !important;
+}
+
+.navbar #btnCreateAccount {
+    font-size: 0.9rem;
+}
+
+.scrolled {
+    top: 0;
+    width: 100%;
+    background-color: black !important;
+}
+
+.navbar-menu-scrolled {
+    color: white !important;
+}

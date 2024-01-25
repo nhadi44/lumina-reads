@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CMS\DashboardController;
+use App\Http\Controllers\Guest\Homepage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [DashboardController::class, 'index']);
+// Route for guest
+Route::group([
+    'middleware' => ['guest'],
+], function () {
+    Route::get('/', [Homepage::class, 'index'])->name('guest.homepage.index');
+});
+
+// Route for cms dashboard
+Route::group([
+    'prefix' => 'cms',
+    'middleware' => ['guest'],
+], function () {
+    Route::get('/', [DashboardController::class, 'index'])->name('cms.dashboard.index');
+});
