@@ -3,7 +3,10 @@
         <a href="/" class="navbar-brand-custom">Lumina Reads</a>
         <ul class="d-none align-items-center mb-0 list-unstyled gap-4" id="menu-desktop">
             @foreach ($menus as $menu)
-                <li class=""><a href="" class="text-decoration-none nav-item-custom">{{ $menu['name'] }}</a>
+                <li class=""><a href="{{ $menu['url'] }}"
+                        class="text-decoration-none nav-item-custom {{ $menu['is_active'] ? 'active' : '' }}">
+                        {{ $menu['name'] }}
+                    </a>
                 </li>
             @endforeach
         </ul>

@@ -57,6 +57,11 @@ body {
     font-size: 0.9rem;
 }
 
+.navbar .active {
+    color: var(--color-red);
+    font-weight: 600;
+}
+
 .scrolled {
     top: 0;
     width: 100%;

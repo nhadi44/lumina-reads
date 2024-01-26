@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CMS\DashboardController;
+use App\Http\Controllers\Guest\Category;
 use App\Http\Controllers\Guest\Homepage;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ Route::group([
     'middleware' => ['guest'],
 ], function () {
     Route::get('/', [Homepage::class, 'index'])->name('guest.homepage.index');
+    Route::get('/category', [Category::class, 'index'])->name('guest.category.index');
 });
 
 // Route for cms dashboard

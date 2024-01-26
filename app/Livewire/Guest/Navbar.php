@@ -20,15 +20,23 @@ class Navbar extends Component
         $this->menus = [
             [
                 'name' => 'Beranda',
+                'url' => route('guest.homepage.index'),
+                'is_active' => request()->routeIs('guest.homepage.index') ? true : false,
             ],
             [
                 'name' => 'Kategori',
+                'url' => route('guest.category.index'),
+                'is_active' => request()->routeIs('guest.category.index') ? true : false,
             ],
             [
                 'name' => 'Tentang Kami',
+                'url' => '#',
+                'is_active' => false,
             ],
             [
                 'name' => 'Kontak',
+                'url' => '#',
+                'is_active' => false,
             ]
         ];
     }
