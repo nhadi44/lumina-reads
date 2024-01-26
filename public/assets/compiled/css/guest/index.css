@@ -17,6 +17,7 @@ body {
 
 .navbar-custom {
     transition: 0.2s ease-in-out;
+    z-index: 99;
 }
 
 .navbar .navbar-brand-custom {
@@ -30,10 +31,11 @@ body {
 
 .navbar .nav-item-custom {
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: var(--font-roboto);
     font-size: 0.9rem;
     transition: 0.2s ease-in-out;
+    font-weight: 400;
 }
 
 .navbar .nav-item-custom:hover {
@@ -44,6 +46,7 @@ body {
     border: none;
     background-color: transparent;
     font-size: 1.5rem;
+    color: white;
 }
 
 .navbar #menu-desktop > li > a {

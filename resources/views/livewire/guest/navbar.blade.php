@@ -1,5 +1,4 @@
 <div>
-    {{-- Close your eyes. Count to one. That is how long forever feels. --}}
     <nav class="navbar bg-transparent">
         <a href="/" class="navbar-brand-custom">Lumina Reads</a>
         <ul class="d-none align-items-center mb-0 list-unstyled gap-4" id="menu-desktop">

@@ -16,16 +16,19 @@ class Navbar extends Component
     // before render
     public function mount()
     {
-        $this->btnCreateAccountName = 'Create an Account';
+        $this->btnCreateAccountName = 'Mulai Sekarang';
         $this->menus = [
             [
-                'name' => 'Menu 1',
+                'name' => 'Beranda',
             ],
             [
-                'name' => 'Menu 2',
+                'name' => 'Kategori',
             ],
             [
-                'name' => 'Menu 3',
+                'name' => 'Tentang Kami',
+            ],
+            [
+                'name' => 'Kontak',
             ]
         ];
     }
