@@ -5,6 +5,7 @@
     --font-roboto: "Roboto", sans-serif;
     --font-bad-script: "Bad Script", cursive;
     --color-red: #ff004d;
+    --color-light-gray: #f2f2f2;
 }
 
 html {
@@ -13,6 +14,10 @@ html {
 
 body {
     font-family: var(--font-roboto);
+}
+
+.bg-light-gray {
+    background-color: var(--color-light-gray);
 }
 
 .navbar-custom {
@@ -70,4 +75,30 @@ body {
 
 .navbar-menu-scrolled {
     color: white !important;
+}
+
+.wrapper {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.carousel {
+    width: 90%;
+    margin: 0px auto;
+}
+.slick-slide {
+    margin: 10px;
+}
+.slick-slide img {
+    width: 100%;
+    border: 2px solid #fff;
+}
+.wrapper .slick-dots li button:before {
+    font-size: 20px;
+    color: white;
+}
+
+.slick-arrow::before {
+    color: black !important;
 }

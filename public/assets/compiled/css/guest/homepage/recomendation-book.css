@@ -1,3 +1,74 @@
-.test {
-    background-color: red;
+.recommendation-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.recommendation-more-link {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: end;
+}
+
+.recommendation-book-cover {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0.8rem;
+}
+
+.recommendation-book-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    text-align: start;
+}
+
+.recommendation-book-author {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+.recommendation-book-rating {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: end;
+}
+
+.recommendation-book-description {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 0;
+    text-align: start !important;
+    overflow: hidden;
+    /* make ... */
+    text-overflow: ellipsis;
+
+    /* make sure it's only one line */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 768px) {
+    .recommendation-heading {
+        font-size: 1.2rem;
+    }
+
+    .recommendation-more-link {
+        font-size: 0.7rem;
+    }
+
+    .recommendation-book-title {
+        font-size: 0.8rem;
+    }
+
+    .recommendation-book-author {
+        font-size: 0.6rem;
+    }
 }
