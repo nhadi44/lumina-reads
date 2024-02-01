@@ -4,7 +4,7 @@
         <a href="" class="text-decoration-none recommendation-more-link">Lihat Semua</a>
     </div>
     <div class="wrapper">
-        <div class="carousel">
+        <div class="carousel" id="recommendationCarousel">
             <div class="card">
                 <div class="card-body p-4">
                     <img src="https://cdn.gramedia.com/uploads/items/9786020523316_Melangkah_UV_Spot_R4-1.jpg"
@@ -185,47 +185,5 @@
 </section>
 
 @push('scripts')
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.carousel').slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: true,
-                responsive: [{
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            arrows: true,
-                            autoplay: true,
-                            autoplaySpeed: 2000,
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            arrows: true,
-                            autoplay: true,
-                            autoplaySpeed: 2000,
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            arrows: true,
-                            autoplay: true,
-                            autoplaySpeed: 2000,
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
+
 @endpush

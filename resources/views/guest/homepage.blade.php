@@ -13,7 +13,6 @@
     </section>
     <section class="py-2 h-75 d-flex align-items-center bg-light-gray">
         <div class="container">
-            <livewire:guest.homepage.RecomendationBookSection>
         </div>
     </section>
 @endsection

@@ -53,9 +53,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Tautan ke Slick Carousel JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/assets/compiled/js/guest/slick-carousel-custom.js"></script>
     <script>
         AOS.init()
     </script>
+    <script type="text/javascript"></script>
     @stack('scripts')
 </body>
 
