@@ -55,6 +55,38 @@
     -webkit-box-orient: vertical;
 }
 
+.tab-links .col.active {
+    /* background-color: red; */
+}
+
+.tab-links {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 70%;
+}
+
+.tab-links .col a {
+    text-decoration: none;
+}
+
+.tab-content {
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    padding: 1rem;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     .recommendation-heading {
         font-size: 1.2rem;
